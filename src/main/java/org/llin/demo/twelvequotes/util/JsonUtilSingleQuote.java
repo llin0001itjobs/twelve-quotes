@@ -90,7 +90,7 @@ public class JsonUtilSingleQuote<T extends SingleQuote> {
 
     public static void main(String[] args) {
         try {
-            JsonUtilSingleQuote<SingleQuote> jsUtil = new JsonUtilSingleQuote<>("(https://api.twelvedata.com/stocks");
+            JsonUtilSingleQuote<SingleQuote> jsUtil = new JsonUtilSingleQuote<>("https://api.twelvedata.com/stocks");
             List<SingleQuote> list = jsUtil.retrieveObject();
             for (int i = 0; i < 5 && i < list.size(); i++) {
                 System.out.println(list.get(i));
