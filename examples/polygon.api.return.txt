@@ -1,0 +1,130 @@
+/v2/aggs/ticker/{stocksTicker}/range/{multiplier}/{timespan}/{from}/{to}
+
+
+
+--Response Object
+{
+  "adjusted": true,
+  "next_url": "https://api.polygon.io/v2/aggs/ticker/AAPL/range/1/day/1578114000000/2020-01-10?cursor=bGltaXQ9MiZzb3J0PWFzYw",
+  "queryCount": 2,
+  "request_id": "6a7e466379af0a71039d60cc78e72282",
+  "results": [
+    {
+      "c": 75.0875,
+      "h": 75.15,
+      "l": 73.7975,
+      "n": 1,
+      "o": 74.06,
+      "t": 1577941200000,
+      "v": 135647456,
+      "vw": 74.6099
+    },
+    {
+      "c": 74.3575,
+      "h": 75.145,
+      "l": 74.125,
+      "n": 1,
+      "o": 74.2875,
+      "t": 1578027600000,
+      "v": 146535512,
+      "vw": 74.7026
+    }
+  ],
+  "resultsCount": 2,
+  "status": "OK",
+  "ticker": "AAPL"
+}
+
+--REQUEST URL
+https://api.polygon.io/v2/aggs/ticker/AAPL/range/1/day/2023-01-09/2023-01-09?adjusted=true&sort=asc&limit=120&apiKey=TFJYyoJszCV7wWKf6KMMons70K74AhDS
+
+--RESPONSE OBJECT
+{
+    "ticker": "AAPL",
+    "queryCount": 1,
+    "resultsCount": 1,
+    "adjusted": true,
+    "results": [
+        {
+            "v": 70790813,
+            "vw": 131.6292,
+            "o": 130.465,
+            "c": 130.15,
+            "h": 133.41,
+            "l": 129.89,
+            "t": 1673240400000,
+            "n": 645365
+        }
+    ],
+    "status": "OK",
+    "request_id": "ff5bd94cd22463ae87cbe9d8a02e1924",
+    "count": 1
+}
+
+--RESPONSE HEADERS
+KEY					VALUE
+content-encoding	gzip
+content-type		application/json
+content-length		213
+request-id			ff5bd94cd22463ae87cbe9d8a02e1924
+
+
+
+--Response Attributes
+
+ticker*string
+The exchange symbol that this item is traded under.
+
+adjusted*boolean
+Whether or not this response was adjusted for splits.
+
+queryCount*integer
+The number of aggregates (minute or day) used to generate the response.
+
+request_id*string
+A request id assigned by the server.
+
+resultsCount*integer
+The total number of results for this request.
+
+status*string
+The status of this request's response.
+
+resultsarray
+c*number
+The close price for the symbol in the given time period.
+
+h*number
+The highest price for the symbol in the given time period.
+
+l*number
+The lowest price for the symbol in the given time period.
+
+ninteger
+The number of transactions in the aggregate window.
+
+o*number
+The open price for the symbol in the given time period.
+
+otcboolean
+Whether or not this aggregate is for an OTC ticker. This field will be left off if false.
+
+t*integer
+The Unix Msec timestamp for the start of the aggregate window.
+
+v*number
+The trading volume of the symbol in the given time period.
+
+vwnumber
+The volume weighted average price.
+
+next_urlstring
+If present, this value can be used to fetch the next page of data.
+
+
+--ERROR RESPONSE
+{
+     "status":"ERROR",
+ "request_id":"944f42b2401325498c7fcf61365e200d",
+      "error":"You've exceeded the maximum requests per minute, please wait or upgrade your subscription to continue. https://polygon.io/pricing"
+}

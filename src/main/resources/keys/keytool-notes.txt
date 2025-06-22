@@ -1,0 +1,13 @@
+PS D:\Documents\eclipse-workspace\northwind-data\src\main\resources\keys> keytool -import -trustcacerts -alias localhost -file localhost.crt -keystore "C:\Program Files\Java\jre1.8.0_361\lib\security\cacerts" -storepass changeit
+Owner: EMAILADDRESS=llin0001itjobs@gmail.com, CN=Linus Lin, OU=Northwind, O=Northwind, L=Delray Beach, ST=FL, C=US
+Issuer: EMAILADDRESS=llin0001itjobs@gmail.com, CN=Linus Lin, OU=Northwind, O=Northwind, L=Delray Beach, ST=FL, C=US
+Serial number: 4efc78284806be32594b00c3dbb916756bf575a5
+Valid from: Fri Sep 22 12:57:19 EDT 2023 until: Sun Oct 22 12:57:19 EDT 2023
+Certificate fingerprints:
+         SHA1: 35:D3:0A:B7:BA:F2:11:7C:B1:C2:11:F0:83:55:10:E1:6F:3B:2C:88
+         SHA256: 84:0C:03:C4:93:6B:A5:87:5A:1B:8C:EB:F6:B5:E3:D1:91:F2:C8:D0:59:0E:54:62:07:B9:93:07:00:29:24:95
+Signature algorithm name: SHA256withRSA
+Subject Public Key Algorithm: 2048-bit RSA key
+Version: 1
+Trust this certificate? [no]:  yes
+Certificate was added to keystore

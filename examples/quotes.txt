@@ -1,0 +1,26 @@
+https://api.polygon.io/v2/aggs/ticker/AAPL/range/1/day/2023-01-09/2023-01-09?adjusted=true&sort=asc&limit=120&apiKey=TcrLC_fRVS3Dr02Q3yyIyi1voM40P6ce
+
+
+As of my knowledge cutoff in September 2021, Yahoo Finance offers various endpoints in their API for retrieving different types of financial data. Here are some typical GET requests you can make to the Yahoo Finance API:
+
+1. Get stock quotes:
+   - Endpoint: `https://api.twelvedata.com/quote`
+   - Parameters: `symbol` (required) - the ticker symbol of the stock you want to retrieve quotes for.
+   - Example: `https://api.twelvedata.com/quote?symbol=AAPL`
+
+2. Get historical stock data:
+   - Endpoint: `https://api.twelvedata.com/time_series`
+   - Parameters: `symbol` (required) - the ticker symbol of the stock you want to retrieve data for, `interval` (optional) - the time interval for the data (e.g., `1day`, `1week`, `1month`), `start_date` (optional) - the start date of the data, `end_date` (optional) - the end date of the data.
+   - Example: `https://api.twelvedata.com/time_series?symbol=AAPL&interval=1day&start_date=2021-01-01&end_date=2021-12-31`
+
+3. Get company information:
+   - Endpoint: `https://api.twelvedata.com/stocks`
+   - Parameters: `symbol` (required) - the ticker symbol of the company you want to retrieve information for.
+   - Example: `https://api.twelvedata.com/stocks?symbol=AAPL`
+
+Please note that the examples provided above are not specific to Yahoo Finance's API but are placeholders to demonstrate the general structure of API requests. The actual endpoints and parameters for Yahoo Finance's API might differ, and it's recommended to refer to Yahoo Finance's API documentation for the most accurate and up-to-date information on how to make GET requests to their API.
+
+{"data":[
+	{"symbol":"000","name":"Greenvolt - Energias Renováveis, S.A.","currency":"EUR","exchange":"FSX","mic_code":"XFRA","country":"Germany","type":"Common Stock"},
+	{"symbol":"000","name":"Greenvolt - Energias Renováveis, S.A.","currency":"EUR","exchange":"Munich","mic_code":"XMUN","country":"Germany","type":"Common Stock"}
+	],"status":"ok"}
