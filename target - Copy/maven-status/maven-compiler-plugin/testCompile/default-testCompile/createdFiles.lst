@@ -1,0 +1,8 @@
+org\llin\twelvequotes\test\controller\QuotesResponseControllerTest.class
+org\llin\twelvequotes\test\controller\StockTypeControllerTest.class
+org\llin\twelvequotes\test\controller\HomeControllerTest.class
+org\llin\twelvequotes\test\ResourceTest.class
+org\llin\twelvequotes\test\controller\CountryControllerTest.class
+org\llin\twelvequotes\test\controller\QuotesControllerTest.class
+org\llin\twelvequotes\test\JsonUtilSingleQuoteTest.class
+org\llin\twelvequotes\test\UtilTests.class
