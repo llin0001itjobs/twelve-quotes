@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.llin.twelvequotes.test.UtilTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.568 s -- in org.llin.twelvequotes.test.UtilTests
