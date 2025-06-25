@@ -1,12 +1,5 @@
 package org.llin.demo.twelvequotes.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-import jakarta.persistence.Transient;
-
 //based on https://api.twelvedata.com/stocks
 
 /**
@@ -24,12 +17,10 @@ import jakarta.persistence.Transient;
   "cusip": "request_access_via_add_ons"
 }
  */
-@Entity
-@Table(name = "all_quotes")
+
 public class SingleQuote {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+
 	private int id; 
 	private String symbol;
 	private String name;
@@ -45,16 +36,15 @@ public class SingleQuote {
 	
 	/* Related to pagination */
 
-	@Transient
+
 	private String firstSymbol;
 
-	@Transient
+
 	private String lastSymbol;
 
-	@Transient
+
 	private int groupIndex;
 
-	@Transient
 	private int quoteIndex;
 
 	public int getId() {

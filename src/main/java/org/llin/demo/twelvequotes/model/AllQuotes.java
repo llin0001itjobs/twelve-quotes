@@ -7,10 +7,10 @@ import java.util.TreeSet;
 
 public class AllQuotes <T extends SingleQuote>{
 	
-	private List<SingleQuote> all;
-	private List<SingleQuote> onlyOneCountry;
-	private List<SingleQuote> onlyOneType;
-	private List<SingleQuote> list;
+	private List<SingleQuote> all = new ArrayList<>();
+	private List<SingleQuote> onlyOneCountry = new ArrayList<>();
+	private List<SingleQuote> onlyOneType = new ArrayList<>();
+	private List<SingleQuote> list = new ArrayList<>();
 	private ChunkedList<T> chunkedList;
 	
 	private String selectedCountry = "United States";
